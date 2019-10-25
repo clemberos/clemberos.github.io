@@ -280,6 +280,12 @@
       { "name": "Zimbabwe", "code": "ZW" }
     ]
     console.log("List of countries in the world", countries);
+    sessionStorage.setItem('countries_arr', JSON.stringify(countries));
+    function getRandomIntInclusive(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive
+    }
   </script>
 </body>
 
